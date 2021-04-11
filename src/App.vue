@@ -1,5 +1,4 @@
 <template>
-     <img src="assets/logo.jpg" width="100">
      <h2>Website</h2>
 </template>
 
