@@ -1,4 +1,5 @@
 <template>
+<img :src="assets/logo.jpg">
      <h2>Website</h2>
 </template>
 
