@@ -16,7 +16,7 @@
 @import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
 
 body {
-  background-color: #121212;
+  background-color: #0d0d12;
   padding: 0;
   margin: 0;
   font-family: "Inter";
@@ -46,14 +46,14 @@ body {
 
 .inner a {
   text-decoration: none;
-  color: purple;
+  color: #272932;
   font-weight: bold;
   margin: 10px;
   transition: 0.2s;
 }
 
 .inner a:hover {
-  color: magenta;
+  color: #374151;
 }
 
 .links {
