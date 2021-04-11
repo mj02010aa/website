@@ -1,5 +1,5 @@
 <template>
-     <img src="https://i.ibb.co/1K2rKm6/apptime-logo.png">
+     <img :src="https://i.ibb.co/1K2rKm6/apptime-logo.png">
      <h2>Website</h2>
 </template>
 
