@@ -1,6 +1,15 @@
-<template lang="html">
-     <img src="https://i.ibb.co/1K2rKm6/apptime-logo.png" />
-     <h2>Website</h2>
+<template>
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <h1>Hi, I'm Eleven</h1>
+        <h2>Student, Full-stack Developer & Founder @ Rise Development</h2>
+        <div class="links text-center">
+          <a target="_blank" href="https://github.com/elevenvac">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style>
