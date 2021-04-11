@@ -14,17 +14,56 @@
 
 <style>
 @import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
+  background-color: #121212;
+  padding: 0;
+  margin: 0;
   font-family: "Inter";
 }
-h2 {
-  margin-bottom: 0;
-  margin-top: 2rem;
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  color: white;
+  text-align: center;
+  /*whatever width you want*/
+}
+
+.inner a {
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+.inner a:hover {
+  color: magenta;
+}
+
+.links {
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .links {
+    display: block;
+  }
 }
 </style>
