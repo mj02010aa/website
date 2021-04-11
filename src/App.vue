@@ -1,5 +1,4 @@
 <template>
-     <img v-bind:src = "assets/logo.jpg" width = "300" height = "250" />
      <h2>Website</h2>
 </template>
 
