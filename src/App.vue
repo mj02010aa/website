@@ -42,7 +42,6 @@ body {
   width: 400px;
   color: white;
   text-align: center;
-  /*whatever width you want*/
 }
 
 .inner a {
