@@ -1,6 +1,18 @@
 <template>
      <h2>Website</h2>
+     <Foot />
 </template>
+
+<script>
+import { defineComponent } from "vue";
+import Foot from "./components/Foot.vue";
+export default defineComponent({
+  name: "App",
+  components: {
+    Foot
+  }
+});
+</script>
 
 <style>
 @import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
