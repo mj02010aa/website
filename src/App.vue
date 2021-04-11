@@ -1,9 +1,10 @@
 <template>
+     <img src="assets/logo.jpg" width="100">
      <h2>Website</h2>
      <Foot />
 </template>
 
-<script lang="ts">
+<!--<script lang="ts">
 import { defineComponent } from "vue";
 import Foot from "./components/Foot.vue";
 export default defineComponent({
@@ -12,7 +13,7 @@ export default defineComponent({
     Foot
   }
 });
-</script>
+</script>-->
 
 <style>
 #app {
