@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><span class="online" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
+         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="??? in Discord" title="??? in Discord"></span> ??? in Discord</a> <!-- # idk.. :) # -->
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
@@ -265,6 +265,16 @@
     }
 	.online {
 	background-color: #43b581;
+	border-radius: 999%;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+    }
+	.offlinetext {
+	color: #6e7885;
+    }
+	.offline {
+	background-color: #6e7885;
 	border-radius: 999%;
 	width: 17px;
 	height: 17px;
