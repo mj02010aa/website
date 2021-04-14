@@ -4,9 +4,7 @@
          <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><span class="online" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
-	    <span class="discordmote">
             <i class="emote fab fa-discord"></i>
-	    </span>
             </a>
             <a href="https://github.com/elevenvac" target="_blank">
             <i class="emote fab fa-github"></i>
@@ -272,7 +270,4 @@
 	height: 17px;
 	display: inline-block;
     }
-	.discordmote {
-		margin-right: 11px;
-	}
 </style>
