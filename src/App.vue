@@ -6,7 +6,7 @@
         <h2>Student, Full-stack Developer & Founder @ Rise Development</h2>
         <div class="links text-center items-center">
           <a target="_blank" href="https://github.com/elevenvac">GitHub</a>
-          <a target="_blank" href="https://discord.com/users/689169122604744833">Discord</a>
+          <a target="_blank" href="https://discord.com/users/354343248698802187">Discord</a>
           <a target="_blank" href="https://www.twitch.tv/elevenvac">Twitch</a>
           <a target="_blank" href="https://www.youtube.com/c/Elevenvac">YouTube</a>
           <a target="_blank" href="https://twitter.com/elevenvac">Twitter</a>
