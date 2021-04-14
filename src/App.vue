@@ -14,7 +14,7 @@
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
             <i class="emote fab fa-spotify"></i>
             </a>
-            <a href="javascript:void(0)" target="_blank">
+            <a href="javascript:void(0)">
             <i class="emote fab fa-medium"></i>
             </a>
          </div>
@@ -24,7 +24,7 @@
          <p class="mt-normal">
             I'm a Student & Full-stack developer. I'm a Currently doing projects under name of <a class="hyperlink" href="https://github.com/risedevelopment" target="_blank">Rise Development</a>. If you are curious about the music I listen to while working, you can check out my <a class="hyperlink" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">Spotify</a> playlists. I also share all my open source projects on <a class="hyperlink" href="https://github.com/elevenvac" target="_blank">Github</a>, including this website.
          </p>
-         For rights notices or other things - <a href="mailto:elevenvac@gmail.com" target="_blank" class="semi hyperlink mt-normal">elevenvac@gmail.com</a>
+         <a href="mailto:elevenvac@gmail.com" target="_blank" class="semi hyperlink mt-normal">elevenvac@gmail.com</a>
       </section>
       <v-footer class="text-center items-center">
          <center>
