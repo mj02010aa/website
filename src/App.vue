@@ -1,72 +1,307 @@
 <template>
-  <div class="outer">
-    <div class="middle">
-      <div class="inner">
-        <h1>Hi, I'm Eleven</h1>
-        <h2>Student, Full-stack Developer & Founder @ Rise Development</h2>
-        <div class="links text-center items-center">
-          <a target="_blank" href="https://github.com/elevenvac">GitHub</a>
-          <a target="_blank" href="https://discord.com/users/354343248698802187">Discord</a>
-          <a target="_blank" href="https://www.twitch.tv/elevenvac">Twitch</a>
-          <a target="_blank" href="https://www.youtube.com/c/Elevenvac">YouTube</a>
-          <a target="_blank" href="https://twitter.com/elevenvac">Twitter</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="light">
+   <div class="main">
+      <header>
+         <a href="/" class="semi router-link-exact-active router-link-active">
+            Eleven's Website 
+            <text class="btext">beta</text>
+         </a>
+         <div class="social">
+            <a href="https://discord.com/users/354343248698802187" target="_blank">
+            <i class="semi fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/elevenvac" target="_blank">
+            <i class="semi fab fa-github"></i>
+            </a>
+            <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
+            <i class="semi fab fa-spotify"></i>
+            </a>
+            <a href="#" target="_blank">
+            <i class="semi fab fa-medium"></i>
+            </a>
+         </div>
+      </header>
+      <section class="home">
+         <h1 class="mt-normal">Hi, I'm Eleven.</h1>
+         <p class="mt-normal">
+            I'm a Student & Full-stack developer. I'm a Currently doing projects under name of <a class="hyperlink" href="https://github.com/risedevelopment" target="_blank">Rise Development</a>. If you are curious about the music I listen to while working, you can check out my <a class="hyperlink" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">Spotify</a> playlists. I also share all my open source projects on <a class="hyperlink" href="https://github.com/elevenvac" target="_blank">Github</a>, including this website.
+         </p>
+         For rights notices or other things - <a href="mailto:elevenvac@gmail.com" target="_blank" class="semi hyperlink mt-normal">elevenvac@gmail.com</a>
+      </section>
+      <v-footer class="text-center items-center">
+         <center>
+            {{ new Date().getFullYear() }} © <a href="//eleven.js.org" target="_blank">Eleven</a> — Made with &#x2764; using <a class="hyperlink" href="//vuejs.org" target="_blank">Vue</a>.
+         </center>
+      </v-footer>
+   </div>
+</div>
 </template>
 
 <style>
-@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap);
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%
+}
 
 body {
-  background-color: #0d0d12;
-  padding: 0;
-  margin: 0;
-  font-family: "Inter";
+	margin: 0
 }
 
-.outer {
-  display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit
 }
 
-.middle {
-  display: table-cell;
-  vertical-align: middle;
+*,
+:after,
+:before {
+	box-sizing: inherit
 }
 
-.inner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  color: white;
-  text-align: center;
+html {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility
 }
 
-.inner a {
-  text-decoration: none;
-  color: #272932;
-  font-weight: bold;
-  margin: 10px;
-  transition: 0.2s;
+body {
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
 }
 
-.inner a:hover {
-  color: #374151;
+body {
+	font-family: Inter, Helvetica, Arial, sans-serif
 }
 
-.links {
-  display: flex;
+main {
+	display: block
 }
 
-@media screen and (max-width: 420px) {
-  .links {
-    display: block;
-  }
+h1 {
+	font-size: 2em;
+	margin: .67em 0
+}
+
+a {
+	background-color: transparent
+}
+
+b,
+strong {
+	font-weight: bolder
+}
+
+img {
+	border-style: none
+}
+
+button,
+input {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	overflow: visible
+}
+
+button {
+	text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+	-webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+	border-style: none;
+	padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+	outline: 1px dotted ButtonText
+}
+
+legend {
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	white-space: normal
+}
+
+[type=checkbox],
+[type=radio],
+legend {
+	box-sizing: border-box;
+	padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+	height: auto
+}
+
+[type=search] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+[hidden],
+template {
+	display: none
+}
+
+a {
+	text-decoration: none
+}
+
+img {
+	vertical-align: middle
+}
+
+h1,
+h2,
+menu,
+p,
+ul {
+	margin: 0
+}
+
+button {
+	border: 0
+}
+
+button,
+menu,
+ul {
+	padding: 0
+}
+
+ul {
+	list-style: none
+}
+
+body .dark,
+body .light {
+	transition: .3s
+}
+
+body {
+	background: #0d0d12;
+	color: white
+}
+
+body .main {
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh
+}
+
+@media (max-width:620px) {
+	body .main {
+		padding: 30px;
+		min-height: calc(var(--vh, 1vh)*100)
+	}
+}
+
+body .mt-normal {
+	margin-top: 24px
+}
+
+body a {
+	color: inherit;
+	cursor: pointer;
+	display: inline-block
+}
+
+body h1 {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 54px
+}
+
+@media (max-width:620px) {
+	body h1 {
+		font-size: 26px;
+		line-height: 32px
+	}
+}
+
+body .semi,
+body p {
+	font-size: 24px;
+	line-height: 36px
+}
+
+@media (max-width:620px) {
+	body .semi,
+	body p {
+		font-size: 18px;
+		line-height: 24px
+	}
+}
+
+body p {
+	font-weight: 400
+}
+
+body .semi {
+	font-weight: 600
+}
+
+body footer,
+body header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 36px
+}
+
+body header .social a {
+	margin-right: 10px
+}
+
+body header .social a:last-child {
+	margin-right: 0
+}
+
+body footer #theme-button {
+	transition: transform 1s ease
+}
+
+body .home {
+	max-width: 620px
+}
+
+body .home .hyperlink {
+	background-image: linear-gradient(120deg, #272932, #374151);
+	background-repeat: no-repeat;
+	background-size: 100% .2em;
+	background-position: 0 88%;
+	transition: background-size .25s ease-in
+}
+
+body .home .hyperlink:hover {
+	background-size: 100% 88%
+}
+
+.btext {
+	font-size: 14px
 }
 </style>
