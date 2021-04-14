@@ -1,9 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="semi router-link-exact-active router-link-active">
-            Eleven's Website 
-         </a>
+         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><img draggable="false" class="onlineimg" src="https://cdn.discordapp.com/attachments/831623233232044083/831922977678295050/online.png" width="17px" alt="Online in Discord" title="Online in Discord">Online in Discord</a> <!--<span class="online" alt="Online in Discord" title="Online in Discord"></span>--> <!-- # idk.. :) # -->
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
@@ -14,7 +12,7 @@
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
             <i class="emote fab fa-spotify"></i>
             </a>
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" target="_blank">
             <i class="emote fab fa-medium"></i>
             </a>
          </div>
@@ -32,11 +30,11 @@
          </center>
       </v-footer>
    </div>
+   </div>
 </template>
 
 <style>
 	@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap);
-	
 	html {
 		line-height: 1.15;
 		-webkit-text-size-adjust: 100%
@@ -80,7 +78,10 @@
 		font-weight: bolder
 	}
 	img {
-		border-style: none
+		border-style: none;
+		-webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 	}
 	button,
 	input {
@@ -260,4 +261,21 @@
 	body .home .hyperlink:hover {
 		background-size: 100% 88%
 	}
-	</style>
+	.onlinetext {
+	color: #43b581;
+    }
+	.online {
+	background-color: #43b581;
+	border-radius: 999%;
+	width: 17px;
+	height: 17px;
+    }
+	.onlineimg {
+	background-color: #43b581;
+	border-radius: 999%;
+	width: 17px;
+	height: 17px;
+	margin-bottom: 3px;
+	margin-right: 5px;
+    }
+</style>
