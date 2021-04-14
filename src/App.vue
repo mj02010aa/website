@@ -20,7 +20,7 @@
          </div>
       </header>
       <section class="home">
-         <h1 class="mt-normal">Hi, I'm Eleven. <br><h3 id="status"></h3></h1>
+         <h1 class="mt-normal">Hi, I'm Eleven.</h1>
          <p class="mt-normal">
             I'm a Student & Full-stack developer. I'm a Currently doing projects under name of <a class="hyperlink" href="https://github.com/risedevelopment" target="_blank">Rise Development</a>. If you are curious about the music I listen to while working, you can check out my <a class="hyperlink" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">Spotify</a> playlists. I also share all my open source projects on <a class="hyperlink" href="https://github.com/elevenvac" target="_blank">Github</a>, including this website.
          </p>
@@ -261,28 +261,3 @@
 		background-size: 100% 88%
 	}
 	</style>
-	
-	
-	<script>
-			request({
-			url: `https://discordapp.com/api/v7/users/354343248698802187`,
-			headers: {
-				"Authorization": `Bot ODMxOTE5NzU0OTU2NjM2MTYw.YHcPpQ.JFAWeFZl0n0y-Nni4IimjHtMRi0`
-			},
-		}, function (error, response, body) {
-			if (error) return console.log(error)
-			else if (!error) {
-				var user = JSON.parse(body)
-
-				var durum = user.presence.status
-
-			}
-			
-			$( function() {
-    var varStatus = user.presence.status
-    $( "#status" ).autocomplete({
-        source: varStatus
-    });
-} );
-		})
-	</script>
