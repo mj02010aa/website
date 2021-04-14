@@ -6,16 +6,16 @@
          </a>
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
-            <i class="semi fab fa-discord"></i>
+            <i class="emote fab fa-discord"></i>
             </a>
             <a href="https://github.com/elevenvac" target="_blank">
-            <i class="semi fab fa-github"></i>
+            <i class="emote fab fa-github"></i>
             </a>
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
-            <i class="semi fab fa-spotify"></i>
+            <i class="emote fab fa-spotify"></i>
             </a>
-            <a href="#" target="_blank">
-            <i class="semi fab fa-medium"></i>
+            <a href="#">
+            <i class="emote fab fa-medium"></i>
             </a>
          </div>
       </header>
@@ -35,270 +35,229 @@
 </template>
 
 <style>
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap);
-html {
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%
-}
-
-body {
-	margin: 0
-}
-
-::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	font: inherit
-}
-
-*,
-:after,
-:before {
-	box-sizing: inherit
-}
-
-html {
-	box-sizing: border-box;
-	text-rendering: optimizeLegibility
-}
-
-body {
-	overflow-x: hidden;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
-}
-
-body {
-	font-family: Inter, Helvetica, Arial, sans-serif
-}
-
-main {
-	display: block
-}
-
-h1 {
-	font-size: 2em;
-	margin: .67em 0
-}
-
-a {
-	background-color: transparent
-}
-
-b,
-strong {
-	font-weight: bolder
-}
-
-img {
-	border-style: none
-}
-
-button,
-input {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
-	overflow: visible
-}
-
-button {
-	text-transform: none
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-	-webkit-appearance: button
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
-	border-style: none;
-	padding: 0
-}
-
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-	outline: 1px dotted ButtonText
-}
-
-legend {
-	color: inherit;
-	display: table;
-	max-width: 100%;
-	white-space: normal
-}
-
-[type=checkbox],
-[type=radio],
-legend {
-	box-sizing: border-box;
-	padding: 0
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-	height: auto
-}
-
-[type=search] {
-	-webkit-appearance: textfield;
-	outline-offset: -2px
-}
-
-[type=search]::-webkit-search-decoration {
-	-webkit-appearance: none
-}
-
-[hidden],
-template {
-	display: none
-}
-
-a {
-	text-decoration: none
-}
-
-img {
-	vertical-align: middle
-}
-
-h1,
-h2,
-menu,
-p,
-ul {
-	margin: 0
-}
-
-button {
-	border: 0
-}
-
-button,
-menu,
-ul {
-	padding: 0
-}
-
-ul {
-	list-style: none
-}
-
-body .dark,
-body .light {
-	transition: .3s
-}
-
-body {
-	background: #0d0d12;
-	color: white
-}
-
-body .main {
-	padding: 60px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 100vh
-}
-
-@media (max-width:620px) {
+	@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap);
+	
+	html {
+		line-height: 1.15;
+		-webkit-text-size-adjust: 100%
+	}
+	body {
+		margin: 0
+	}
+	::-webkit-file-upload-button {
+		-webkit-appearance: button;
+		font: inherit
+	}
+	*,
+	:after,
+	:before {
+		box-sizing: inherit
+	}
+	html {
+		box-sizing: border-box;
+		text-rendering: optimizeLegibility
+	}
+	body {
+		overflow-x: hidden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale
+	}
+	body {
+		font-family: Inter, Helvetica, Arial, sans-serif
+	}
+	main {
+		display: block
+	}
+	h1 {
+		font-size: 2em;
+		margin: .67em 0
+	}
+	a {
+		background-color: transparent
+	}
+	b,
+	strong {
+		font-weight: bolder
+	}
+	img {
+		border-style: none
+	}
+	button,
+	input {
+		font-family: inherit;
+		font-size: 100%;
+		line-height: 1.15;
+		margin: 0;
+		overflow: visible
+	}
+	button {
+		text-transform: none
+	}
+	[type=button],
+	[type=reset],
+	[type=submit],
+	button {
+		-webkit-appearance: button
+	}
+	[type=button]::-moz-focus-inner,
+	[type=reset]::-moz-focus-inner,
+	[type=submit]::-moz-focus-inner,
+	button::-moz-focus-inner {
+		border-style: none;
+		padding: 0
+	}
+	[type=button]:-moz-focusring,
+	[type=reset]:-moz-focusring,
+	[type=submit]:-moz-focusring,
+	button:-moz-focusring {
+		outline: 1px dotted ButtonText
+	}
+	legend {
+		color: inherit;
+		display: table;
+		max-width: 100%;
+		white-space: normal
+	}
+	[type=checkbox],
+	[type=radio],
+	legend {
+		box-sizing: border-box;
+		padding: 0
+	}
+	[type=number]::-webkit-inner-spin-button,
+	[type=number]::-webkit-outer-spin-button {
+		height: auto
+	}
+	[type=search] {
+		-webkit-appearance: textfield;
+		outline-offset: -2px
+	}
+	[type=search]::-webkit-search-decoration {
+		-webkit-appearance: none
+	}
+	[hidden],
+	template {
+		display: none
+	}
+	a {
+		text-decoration: none
+	}
+	img {
+		vertical-align: middle
+	}
+	h1,
+	h2,
+	menu,
+	p,
+	ul {
+		margin: 0
+	}
+	button {
+		border: 0
+	}
+	button,
+	menu,
+	ul {
+		padding: 0
+	}
+	ul {
+		list-style: none
+	}
+	body .dark,
+	body .light {
+		transition: .3s
+	}
+	body {
+		background: #0d0d12;
+		color: white
+	}
 	body .main {
-		padding: 30px;
-		min-height: calc(var(--vh, 1vh)*100)
+		padding: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 100vh
 	}
-}
-
-body .mt-normal {
-	margin-top: 24px
-}
-
-body a {
-	color: inherit;
-	cursor: pointer;
-	display: inline-block
-}
-
-body h1 {
-	font-weight: 700;
-	font-size: 42px;
-	line-height: 54px
-}
-
-@media (max-width:620px) {
+	@media (max-width:620px) {
+		body .main {
+			padding: 30px;
+			min-height: calc(var(--vh, 1vh)*100)
+		}
+	}
+	body .mt-normal {
+		margin-top: 24px
+	}
+	body a {
+		color: inherit;
+		cursor: pointer;
+		display: inline-block
+	}
 	body h1 {
-		font-size: 26px;
-		line-height: 32px
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 54px
 	}
-}
-
-body .semi,
-body p {
-	font-size: 24px;
-	line-height: 36px
-}
-
-@media (max-width:620px) {
+	@media (max-width:620px) {
+		body h1 {
+			font-size: 26px;
+			line-height: 32px
+		}
+	}
 	body .semi,
 	body p {
-		font-size: 18px;
-		line-height: 24px
+		font-size: 24px;
+		line-height: 36px
 	}
-}
+	body .emote {
+		font-size: 24px;
+		line-height: 36px
+	}
+	@media (max-width:620px) {
+		body .semi,
+		body p {
+			font-size: 18px;
+			line-height: 24px
+		}
+		body .emote {
+			font-size: 18px;
+			line-height: 24px
+		}
 
-body p {
-	font-weight: 400
-}
-
-body .semi {
-	font-weight: 600
-}
-
-body footer,
-body header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 36px
-}
-
-body header .social a {
-	margin-right: 10px
-}
-
-body header .social a:last-child {
-	margin-right: 0
-}
-
-body footer #theme-button {
-	transition: transform 1s ease
-}
-
-body .home {
-	max-width: 620px
-}
-
-body .home .hyperlink {
-	background-image: linear-gradient(120deg, #272932, #374151);
-	background-repeat: no-repeat;
-	background-size: 100% .2em;
-	background-position: 0 88%;
-	transition: background-size .25s ease-in
-}
-
-body .home .hyperlink:hover {
-	background-size: 100% 88%
-}
-
-.btext {
-	font-size: 14px
-}
-</style>
+	}
+	body p {
+		font-weight: 400
+	}
+	body .semi {
+		font-weight: 600
+	}
+	body footer,
+	body header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 36px
+	}
+	body header .social a {
+		margin-right: 10px
+	}
+	body header .social a:last-child {
+		margin-right: 0
+	}
+	body footer #theme-button {
+		transition: transform 1s ease
+	}
+	body .home {
+		max-width: 620px
+	}
+	body .home .hyperlink {
+		background-image: linear-gradient(120deg, #272932, #374151);
+		background-repeat: no-repeat;
+		background-size: 100% .2em;
+		background-position: 0 88%;
+		transition: background-size .25s ease-in
+	}
+	body .home .hyperlink:hover {
+		background-size: 100% 88%
+	}
+	</style>
