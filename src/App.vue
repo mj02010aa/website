@@ -1,10 +1,8 @@
 <template>
-<div class="light">
    <div class="main">
       <header>
          <a href="/" class="semi router-link-exact-active router-link-active">
             Eleven's Website 
-            <text class="btext">beta</text>
          </a>
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
@@ -34,7 +32,6 @@
          </center>
       </v-footer>
    </div>
-</div>
 </template>
 
 <style>
