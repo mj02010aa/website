@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><img draggable="false" class="onlineimg" src="https://cdn.discordapp.com/attachments/831623233232044083/831922977678295050/online.png" width="17px" alt="Online in Discord" title="Online in Discord">Online in Discord</a>
+         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><span class="online" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
@@ -29,7 +29,6 @@
             {{ new Date().getFullYear() }} © <a href="//eleven.js.org" target="_blank">Eleven</a> — Made with &#x2764; using <a class="hyperlink" href="//vuejs.org" target="_blank">Vue</a>.
          </center>
       </v-footer>
-   </div>
    </div>
 </template>
 
@@ -269,13 +268,6 @@
 	border-radius: 999%;
 	width: 17px;
 	height: 17px;
-    }
-	.onlineimg {
-	background-color: #43b581;
-	border-radius: 999%;
-	width: 17px;
-	height: 17px;
-	margin-bottom: 3px;
-	margin-right: 5px;
+	display: inline-block;
     }
 </style>
