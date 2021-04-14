@@ -6,12 +6,15 @@
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
             </a>
+	    &nbsp;
             <a href="https://github.com/elevenvac" target="_blank">
             <i class="emote fab fa-github"></i>
             </a>
+	    &nbsp;
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
             <i class="emote fab fa-spotify"></i>
             </a>
+	    &nbsp;
             <a href="javascript:void(0)" target="_blank">
             <i class="emote fab fa-medium"></i>
             </a>
