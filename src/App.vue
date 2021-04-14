@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><img draggable="false" class="onlineimg" src="https://cdn.discordapp.com/attachments/831623233232044083/831922977678295050/online.png" width="17px" alt="Online in Discord" title="Online in Discord">Online in Discord</a> <!--<span class="online" alt="Online in Discord" title="Online in Discord"></span>--> <!-- # idk.. :) # -->
+         <a href="/" class="onlinetext semi router-link-exact-active router-link-active"><img draggable="false" class="onlineimg" src="https://cdn.discordapp.com/attachments/831623233232044083/831922977678295050/online.png" width="17px" alt="Online in Discord" title="Online in Discord">Online in Discord</a>
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
