@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
+         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="online" alt="Online" title="Online"></span> Online</a> <!-- # idk.. :) # -->
          <div class="social semi">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             dc<span style="color:#7289DA">.</span>
@@ -258,10 +258,10 @@
 		background-size: 100% 88%
 	}
 	.onlinetext {
-	color: #43b581;
+	color: #faa61a;
     }
 	.online {
-	background-color: #43b581;
+	background-color: #faa61a;
 	border-radius: 999%;
 	width: 11px;
 	height: 11px;
