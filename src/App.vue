@@ -258,7 +258,7 @@
 		background-size: 100% 88%
 	}
 	.florencetext {
-	// ...
+	color: #ffffff;
     }
 	.florence {
 	background-color: #b5b5e7;
