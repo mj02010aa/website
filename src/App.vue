@@ -1,18 +1,21 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="Online" title="Online"></span> Online</a> <!-- # idk.. :) # -->
-	 <div class="social semi">
-           <a href="https://discord.com/users/354343248698802187" target="_blank">
-           <span>dc<textt style="color:#7289DA">.</textt></span>
-	   </a>
-	   <a href="https://github.com/elevenvac" target="_blank">
-	   <span>gh<textt style="color:#24292e">.</textt></span>
-	   </a>
-	   <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
-	   <span>sp<textt style="color:#1ed760">.</textt></span>
-	   </a>
-	 </div>
+         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
+         <div class="social">
+            <a href="https://discord.com/users/354343248698802187" target="_blank">
+            <i class="emote fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/elevenvac" target="_blank">
+            <i class="emote fab fa-github"></i>
+            </a>
+            <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
+            <i class="emote fab fa-spotify"></i>
+            </a>
+            <a href="javascript:void(0)">
+            <i class="emote fab fa-medium"></i>
+            </a>
+         </div>
       </header>
       <section class="home">
          <h1 class="mt-normal">Hi, I'm Eleven.</h1>
