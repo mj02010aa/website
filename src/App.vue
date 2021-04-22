@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="??? in Discord" title="??? in Discord"></span> ??? in Discord</a> <!-- # idk.. :) # -->
+         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
          <div class="social">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             <i class="emote fab fa-discord"></i>
@@ -22,7 +22,7 @@
          <p class="mt-normal">
             I'm a Student & Full-stack developer. I'm a Currently doing projects under name of <a class="hyperlink" href="https://github.com/risedevelopment" target="_blank">Rise Development</a>. If you are curious about the music I listen to while working, you can check out my <a class="hyperlink" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">Spotify</a> playlists. I also share all my open source projects on <a class="hyperlink" href="https://github.com/elevenvac" target="_blank">Github</a>, including this website.
          </p>
-         <a href="mailto:elevenvac@gmail.com" target="_blank" class="semi hyperlink mt-normal">elevenvac@gmail.com</a>
+         <a href="mailto:elevenvac@gmail.com" target="_blank" class="semi hyperlink mt-normal">hi@thiseleven.com</a>
       </section>
       <v-footer class="text-center items-center">
          <center>
@@ -168,7 +168,7 @@
 		transition: .3s
 	}
 	body {
-		background: #0d0d12;
+		background: #7e7ebc;
 		color: white
 	}
 	body .main {
@@ -251,7 +251,7 @@
 		max-width: 620px
 	}
 	body .home .hyperlink {
-		background-image: linear-gradient(120deg, #272932, #374151);
+		background-image: linear-gradient(120deg, #b5b5e7, #b5b5e7);
 		background-repeat: no-repeat;
 		background-size: 100% .2em;
 		background-position: 0 88%;
@@ -266,18 +266,20 @@
 	.online {
 	background-color: #43b581;
 	border-radius: 999%;
-	width: 17px;
-	height: 17px;
+	width: 11px;
+	height: 11px;
+	margin-bottom: 2px;
 	display: inline-block;
     }
 	.offlinetext {
-	color: #6e7885;
+	color: #faa61a;
     }
 	.offline {
-	background-color: #6e7885;
+	background-color: #faa61a;
 	border-radius: 999%;
-	width: 17px;
-	height: 17px;
+	width: 11px;
+	height: 11px;
+	margin-bottom: 2px;
 	display: inline-block;
     }
 </style>
