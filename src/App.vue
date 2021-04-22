@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="semi router-link-exact-active router-link-active"><span class="florence" alt="Florence" title="Florence"></span> Full-stack Developer</a>
+         <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="online" alt="Online" title="Online"></span> Online</a> <!-- # idk.. :) # -->
          <div class="social semi">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             dc<span style="color:#7289DA">.</span>
@@ -273,14 +273,6 @@
     }
 	.offline {
 	background-color: #faa61a;
-	border-radius: 999%;
-	width: 11px;
-	height: 11px;
-	margin-bottom: 2px;
-	display: inline-block;
-    }
-    	.florence {
-	background-color: #b5b5e7;
 	border-radius: 999%;
 	width: 11px;
 	height: 11px;
