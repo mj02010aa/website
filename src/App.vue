@@ -263,9 +263,9 @@
 	.florence {
 	background-color: #b5b5e7;
 	border-radius: 999%;
-	width: 11px;
-	height: 11px;
-	margin-bottom: 2px;
+	width: 8px;
+	height: 8px;
+	margin-bottom: 4px;
 	display: inline-block;
     }
 	.offlinetext {
