@@ -1,7 +1,7 @@
 <template>
    <div class="main">
       <header>
-         <a href="/" class="florencetext semi router-link-exact-active router-link-active"><span class="florence" alt="Florence" title="Florence"></span> Full-stack Developer</a>
+         <a href="/" class="florencetext semi router-link-exact-active router-link-active"><span class="florence" alt="Florence" title="Florence"></span> Mills</a>
          <div class="social semi">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
             dc<span style="color:#7289DA">.</span>
