@@ -12,7 +12,7 @@
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
             <i class="emote fab fa-spotify"></i>
             </a>
-            <a href="javascript:void(0)" target="_blank">
+            <a href="javascript:void(0)">
             <i class="emote fab fa-medium"></i>
             </a>
          </div>
