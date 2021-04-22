@@ -2,9 +2,9 @@
    <div class="main">
       <header>
          <a href="/" class="offlinetext semi router-link-exact-active router-link-active"><span class="offline" alt="Online in Discord" title="Online in Discord"></span> Online in Discord</a> <!-- # idk.. :) # -->
-         <div class="social">
+         <div class="social semi">
             <a href="https://discord.com/users/354343248698802187" target="_blank">
-            <i class="emote fab fa-discord"></i>
+            dc<span style="color:#7289DA">.</span>
             </a>
             <a href="https://github.com/elevenvac" target="_blank">
             <i class="emote fab fa-github"></i>
