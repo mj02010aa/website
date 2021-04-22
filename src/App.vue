@@ -268,15 +268,4 @@
 	margin-bottom: 4px;
 	display: inline-block;
     }
-	.offlinetext {
-	color: #faa61a;
-    }
-	.offline {
-	background-color: #faa61a;
-	border-radius: 999%;
-	width: 11px;
-	height: 11px;
-	margin-bottom: 2px;
-	display: inline-block;
-    }
 </style>
