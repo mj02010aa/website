@@ -7,13 +7,10 @@
             dc<span style="color:#7289DA">.</span>
             </a>
             <a href="https://github.com/elevenvac" target="_blank">
-            <i class="emote fab fa-github"></i>
+            gh<span style="color:#24292e">.</span>
             </a>
             <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
-            <i class="emote fab fa-spotify"></i>
-            </a>
-            <a href="javascript:void(0)">
-            <i class="emote fab fa-medium"></i>
+            sp<span style="color:#1ed760">.</span>
             </a>
          </div>
       </header>
