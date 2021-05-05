@@ -27,6 +27,17 @@
          </center>
       </v-footer>
    </div>
+   
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+
+<script>
+new Vue({
+    el: "#app",
+    data: {
+        name: "Eleven"
+    }
+});
+</script>
 </template>
 
 <style>
@@ -278,14 +289,3 @@
 	color: #1ed760;
     }
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
-
-<script>
-new Vue({
-    el: "#app",
-    data: {
-        name: "Eleven"
-    }
-});
-</script>
