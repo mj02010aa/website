@@ -279,6 +279,8 @@
     }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+
 <script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
 new Vue({
@@ -288,4 +290,3 @@ new Vue({
     }
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
