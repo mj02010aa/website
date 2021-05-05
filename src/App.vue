@@ -282,7 +282,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
 
 <script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
 new Vue({
     el: "#app",
     data: {
