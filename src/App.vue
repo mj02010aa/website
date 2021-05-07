@@ -16,6 +16,31 @@
       </header>
       <section class="home">
          <h1 class="mt-normal">Hi, I'm Eleven<span class="dot-green">.</span></h1>
+
+
+
+	<div
+		class="flex w-11/12 mx-auto space-x-1 text-base font-light sm:w-full sm:mx-0 sm:text-sm dark:text-gray-50"
+		v-if="lanyard.listening_to_spotify"
+	>
+		<unicon
+			fill="#00D95F"
+			name="spotify"
+			width="20"
+			height="20"
+			icon-style="line"
+		></unicon>
+		<a class="self-center" :href="link" rel="noopener noreferrer"
+			>Listening to
+			<span class="font-bold text-indigo-600 dark:text-indigo-500">{{
+				song
+			}}</span>
+			by <span class="font-bold text-yellow-500">{{ artist }}</span> now</a
+		>
+	</div>
+
+
+
          <p class="mt-normal">
             I'm a Student & Full-stack developer. I'm a Currently doing projects under name of <a class="hyperlink" href="https://github.com/risedevelopment" target="_blank">Rise Development</a>. If you are curious about the music I listen to while working, you can check out my <a class="hyperlink" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">Spotify</a> playlists. I also share all my open source projects on <a class="hyperlink" href="https://github.com/elevenvac" target="_blank">Github</a>, including this website.
          </p>
@@ -278,3 +303,64 @@
 	color: #1ed760;
     }
 </style>
+
+<script>
+export default {
+	data() {
+		return {
+			finished: false,
+			lanyard: {},
+			socket: null,
+		};
+	},
+	computed: {
+		song() {
+			return this.lanyard?.spotify?.song || false;
+		},
+		artist() {
+			return this.lanyard?.spotify?.artist || false;
+		},
+		link() {
+			return `https://open.spotify.com/track/${
+				this.lanyard?.spotify?.track_id
+			}?si=${Math.random(36).toString(36)}`;
+		},
+	},
+	beforeMount() {
+		/**
+		 * Connect to Lanyard Socket API, send heartbeat every 30 seconds and replace the Vue data value with the message
+		 *
+		 * Websocket connection is designed by EGGSY (https://eggsy.xyz)
+		 */
+		this.socket = new WebSocket("wss://api.lanyard.rest/socket");
+		this.socket.addEventListener("open", () => {
+			// Subscribe to ID
+			this.socket.send(
+				JSON.stringify({
+					op: 2,
+					d: {
+						subscribe_to_id: "403225819222245377",
+					},
+				})
+			);
+			// Send heartbeat every 30 seconds
+			setInterval(() => {
+				this.socket.send(
+					JSON.stringify({
+						op: 3,
+					})
+				);
+			}, 30000);
+		});
+		this.socket.addEventListener("message", ({ data }) => {
+			const { t: type, d: status } = JSON.parse(data);
+			if (type === "INIT_STATE" || type === "PRESENCE_UPDATE")
+				this.lanyard = status || {};
+			this.finished = true;
+		});
+	},
+	beforeDestroy() {
+		this.socket?.close();
+	},
+};
+</script>
