@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
+body {
+	font-family: "Raleway", sans-serif;
+	background-color: #1f2131;
+	color: white;
+	text-align: center;
+    text-decoration: none
+}
+
+img {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none
+}
+
+@media only screen and (min-width: 640px) {
+	.head {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+	.about-me {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+	.body {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+	.navbar {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+	.techs {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+	.langs {
+		padding-left: 15%;
+		padding-right: 15%
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.head {
+		padding-left: 3%;
+		padding-right: 3%
+	}
+	.about-me {
+		padding-left: 5%;
+		padding-right: 5%
+	}
+	.techs {
+		padding-left: 5%;
+		padding-right: 5%
+	}
+	.langs {
+		padding-left: 5%;
+		padding-right: 5%
+	}
+	#head-br {
+		display: none
+	}
+}
+
+.head {
+	padding-top: 5%;
+}
+
+.head-img-section {
+	float: left;
+	display: inline-block;
+	margin: 10px
+}
+
+.head-img {
+	width: 150px;
+	border-radius: 999%;
+	border: 5px solid #282a3f
+}
+
+.head-img:hover {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.head-text {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 1.1;
+}
+
+.head-text-min {
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left
+}
+
+.head-text-section {
+	float: left;
+	display: inline-block;
+	margin: 10px
+}
+
+.florence-text {
+	color: #b5b5e7;
+	display: inline
+}
+
+.navbar-img {
+	width: 45px;
+}
+
+.navbar {
+	background-color: #181925;
+}
+
+.navbar-button {
+	font-size: 20px
+}
+
+.ver {
+	color: white;
+	font-size: 18px;
+	text-decoration: none
+}
+
+.ver:hover {
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	opacity: 0.8
+}
+
+.about-me {
+	float: left;
+	padding-top: 4%;
+}
+
+.about-me-text {
+	font-size: 21px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.about-me-text-min {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left
+}
+
+.hyperlink {
+	background-image: linear-gradient(120deg, #b5b5e7, #b5b5e7);
+	background-repeat: no-repeat;
+	background-size: 100% .1em;
+	background-position: 0 88%;
+	transition: background-size .25s ease-in;
+	text-decoration: none;
+	color: white
+}
+
+.hyperlink:hover {
+	text-decoration: none;
+	display: inline;
+	background-size: 100% 88%;
+	color: white
+}
+
+.techs {
+	float: left;
+	padding-top: 5%;
+}
+
+.techs-text {
+	font-size: 21px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.techs-bt {
+	float: left;
+	border: 2px solid gray;
+	background-color: transparent;
+	color: white;
+	border-radius: 5px;
+	margin-right: 8px;
+	margin-bottom: 8px
+}
+
+.techs-txt {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.langs {
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.langs-text {
+	font-size: 21px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.langs-bt {
+	float: left;
+	border: 2px solid gray;
+	background-color: transparent;
+	color: white;
+	border-radius: 5px;
+	margin-right: 8px;
+	margin-bottom: 8px
+}
+
+.langs-txt {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.head-text-exp {
+	padding-top: 4%;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.soci-bt {
+	float: left;
+	background-color: transparent;
+	color: white;
+	border-radius: 5px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+    text-decoration: none
+}
+
+.soci-bt:hover {
+    opacity: 0.8;
+}
+
+.soci-txt {
+	margin-left: 30px;
+	margin-right: 30px;
+    text-decoration: none;
+    color: white
+}
+
+.discord-border {
+    border: 2px solid #5865F2;
+}
+
+.discord-logo {
+    color: #5865F2
+}
+
+.github-border {
+    border: 2px solid gray;
+}
+
+.github-logo {
+    color: gray;
+}
+
+.spotify-border {
+    border: 2px solid #1ed760;
+}
+
+.spotify-logo {
+    color: #1ed760;
+}
+
+.twitter-border {
+    border: 2px solid #009ded;
+}
+
+.twitter-logo {
+    color: #009ded;
+}
+
+.youtube-border {
+    border: 2px solid #f70000;
+}
+
+.youtube-logo {
+    color: #f70000;
+}
