@@ -40,6 +40,7 @@ img {
         cursor: pointer;
         margin-top: 1%;
         margin-right: 24px;
+        border-radius: 5px;
     }
 }
 
@@ -64,6 +65,7 @@ img {
         background-color: var(--navbar-bg);
         cursor: pointer;
         margin-top: 3%;
+        border-radius: 5px;
     }
 }
 
