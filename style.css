@@ -30,6 +30,10 @@ img {
 		padding-left: 15%;
 		padding-right: 15%
 	}
+    .partners {
+		padding-left: 15%;
+		padding-right: 15%
+	}
 }
 
 @media only screen and (max-width: 640px) {
@@ -38,6 +42,10 @@ img {
 		padding-right: 3%
 	}
 	.about-me {
+		padding-left: 5%;
+		padding-right: 5%
+	}
+    .partners {
 		padding-left: 5%;
 		padding-right: 5%
 	}
@@ -225,6 +233,39 @@ img {
 
 .envelope-logo {
     color: gray;
+}
+
+.partners {
+	float: left;
+	padding-top: 4%;
+}
+
+.partners-text {
+	font-size: 21px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.partners-text-min {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left
+}
+
+.active {
+	background-image: var(--hyperlink-bi);
+	background-repeat: no-repeat;
+	background-size: 100% .1em;
+	background-position: 0 88%;
+	transition: background-size .25s ease-in;
+	text-decoration: none;
+	color: white
+}
+
+.active:hover {
+	text-decoration: none;
+	display: inline;
+	color: white
 }
 
 :root {
