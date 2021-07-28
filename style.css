@@ -30,7 +30,7 @@ img {
 		padding-left: 15%;
 		padding-right: 15%
 	}
-    .partners {
+    .projects {
 		padding-left: 15%;
 		padding-right: 15%
 	}
@@ -45,7 +45,7 @@ img {
 		padding-left: 5%;
 		padding-right: 5%
 	}
-    .partners {
+    .projects {
 		padding-left: 5%;
 		padding-right: 5%
 	}
@@ -235,18 +235,18 @@ img {
     color: gray;
 }
 
-.partners {
+.projects {
 	float: left;
 	padding-top: 4%;
 }
 
-.partners-text {
+.projects-text {
 	font-size: 21px;
 	font-weight: 500;
 	text-align: left;
 }
 
-.partners-text-min {
+.projects-text-min {
 	font-size: 18px;
 	font-weight: 300;
 	text-align: left
@@ -266,6 +266,22 @@ img {
 	text-decoration: none;
 	display: inline;
 	color: white
+}
+
+.card {
+    display: inline-block;
+    background-color: var(--navbar-bg)
+}
+
+.card-img-top {
+    width: 100px;
+    border-radius: 999%;
+}
+
+.card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 :root {
