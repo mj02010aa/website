@@ -34,6 +34,13 @@ img {
 		padding-left: 15%;
 		padding-right: 15%
 	}
+    .card {
+        display: inline-block;
+        background-color: var(--navbar-bg);
+        cursor: pointer;
+        margin-top: 1%;
+        margin-right: 24px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -52,6 +59,12 @@ img {
 	#head-br {
 		display: none
 	}
+    .card {
+        display: inline-block;
+        background-color: var(--navbar-bg);
+        cursor: pointer;
+        margin-top: 3%;
+    }
 }
 
 .head {
@@ -268,20 +281,15 @@ img {
 	color: white
 }
 
-.card {
-    display: inline-block;
-    background-color: var(--navbar-bg)
-}
-
-.card-img-top {
-    width: 100px;
-    border-radius: 999%;
-}
-
 .card-text {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    color: #dddddd
+}
+
+.card {
+    float: left
 }
 
 :root {
