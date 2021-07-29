@@ -46,3 +46,10 @@
     animation: 'scale',
     theme: 'ws',
   });
+
+  tippy('#nameDesc', {
+    content: 'This is Nickname, Not my Real Name',
+    arrow: false,
+    animation: 'scale',
+    theme: 'ws',
+  });
