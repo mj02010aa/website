@@ -294,6 +294,11 @@ img {
     float: left
 }
 
+#nameDesc {
+	cursor: default;
+	font-weight: 400
+}
+
 :root {
     --body-bg: #1f2131;
     --navbar-bg: #181925;
