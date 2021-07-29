@@ -8,10 +8,12 @@
     <link rel=icon href="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048">
     <title>Home - eleven.codes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="assets/tippy.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
             to continue.</strong>
     </noscript>
     <div class="navbar">
-        <img onclick="location.href='/'" draggable="false" class="navbar-img" src="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048"
+        <img id="goHomeImage" onclick="location.href='/'" draggable="false" class="navbar-img" src="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048"
             class="d-inline-block align-top">
         <div class="navbar-right">
            <a class="ver" href="/projects">Projects</a>
@@ -30,7 +32,7 @@
     <div class="head">
         <div class="head-img-section">
             <img draggable="false" class="head-img"
-                src="https://i.ibb.co/ydScvjQ/da4c87caa2999facca89246a061821a5.png?size=2048">
+                src="https://i.ibb.co/ydScvjQ/da4c87caa2999facca89246a061821a5.png?size=2048" >
         </div>
         <div class="head-text-section">
             <div class="head-text">
@@ -64,32 +66,36 @@
             <br>
         </p>
         <a href="https://discord.com/users/354343248698802187" target="_blank">
-            <p class="soci-bt discord-border"><span class="soci-txt"><i class="fab fa-discord discord-logo"></i>
+            <p id="sociDiscord" class="soci-bt discord-border"><span class="soci-txt"><i class="fab fa-discord discord-logo"></i>
                     &nbsp;Discord</span></p>
         </a>
         <a href="https://github.com/elevenvac" target="_blank">
-            <p class="soci-bt github-border"><span class="soci-txt"><i class="fab fa-github github-logo"></i>
+            <p id="sociGithub" class="soci-bt github-border"><span class="soci-txt"><i class="fab fa-github github-logo"></i>
                     &nbsp;GitHub</span></p>
         </a>
         <a href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank">
-            <p class="soci-bt spotify-border"><span class="soci-txt"><i class="fab fa-spotify spotify-logo"></i>
+            <p id="sociSpotify" class="soci-bt spotify-border"><span class="soci-txt"><i class="fab fa-spotify spotify-logo"></i>
                     &nbsp;Spotify</span></p>
         </a>
         <a href="https://twitter.com/elevenvac" target="_blank">
-            <p class="soci-bt twitter-border"><span class="soci-txt"><i class="fab fa-twitter twitter-logo"></i>
+            <p id="sociTwitter" class="soci-bt twitter-border"><span class="soci-txt"><i class="fab fa-twitter twitter-logo"></i>
                     &nbsp;Twitter</span></p>
         </a>
         <a href="https://www.youtube.com/c/Elevenvac" target="_blank">
-            <p class="soci-bt youtube-border"><span class="soci-txt"><i class="fab fa-youtube youtube-logo"></i>
+            <p id="sociYoutube" class="soci-bt youtube-border"><span class="soci-txt"><i class="fab fa-youtube youtube-logo"></i>
                     &nbsp;YouTube</span></p>
         </a>
         <a href="mailto:11@apptime.tech" target="_blank">
-            <p class="soci-bt envelope-border"><span class="soci-txt"><i class="fa fa-envelope envelope-logo"></i>
+            <p id="sociMail" class="soci-bt envelope-border"><span class="soci-txt"><i class="fa fa-envelope envelope-logo"></i>
                     &nbsp;Mail</span></p>
         </a>
         </p>
     </div>
 
 </body>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="assets/tippy.js"></script>
 
 </html>
