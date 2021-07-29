@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" by="Eleven" github="elevenvac">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=icon href="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048">
     <title>Projects - eleven.codes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="assets/tippy.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
             to continue.</strong>
     </noscript>
     <div class="navbar">
-        <img onclick="location.href='/'" draggable="false" class="navbar-img" src="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048"
+        <img id="goHomeImage" onclick="location.href='/'" draggable="false" class="navbar-img" src="https://i.ibb.co/cYdxxRf/Eleven-icon-higer.png?size=2048"
             class="d-inline-block align-top">
         <div class="navbar-right">
            <a class="ver active" href="/projects">Projects</a>
@@ -61,5 +63,9 @@
     </div>
 
 </body>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="assets/tippy.js"></script>
 
 </html>
