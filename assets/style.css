@@ -294,6 +294,10 @@ img {
     float: left
 }
 
+.card:hover {
+	box-shadow: #212231 0px 0px 20px;
+}
+
 #nameDesc {
 	cursor: default;
 	font-weight: 400
