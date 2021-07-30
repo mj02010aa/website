@@ -14,29 +14,13 @@ img {
 }
 
 @media only screen and (min-width: 640px) {
-	.head {
-		padding-left: 15%;
-		padding-right: 15%
-	}
-	.about-me {
-		padding-left: 15%;
-		padding-right: 15%
-	}
-	.body {
-		padding-left: 15%;
-		padding-right: 15%
-	}
-	.navbar {
-		padding-left: 15%;
-		padding-right: 15%
-	}
-    .projects {
+	.padding {
 		padding-left: 15%;
 		padding-right: 15%
 	}
     .card {
         display: inline-block;
-        background-color: var(--navbar-bg);
+        background-color: var(--card-bg);
         cursor: pointer;
         margin-top: 1%;
         margin-right: 24px;
@@ -45,28 +29,25 @@ img {
 }
 
 @media only screen and (max-width: 640px) {
-	.head {
+	.padding {
 		padding-left: 3%;
 		padding-right: 3%
-	}
-	.about-me {
-		padding-left: 5%;
-		padding-right: 5%
-	}
-    .projects {
-		padding-left: 5%;
-		padding-right: 5%
 	}
 	#head-br {
 		display: none
 	}
     .card {
         display: inline-block;
-        background-color: var(--navbar-bg);
+        background-color: var(--card-bg);
         cursor: pointer;
         margin-top: 3%;
         border-radius: 5px;
     }
+	.social {
+		float: left;
+		padding-top: 4%;
+		padding-bottom: 2%
+	}
 }
 
 .head {
@@ -83,6 +64,10 @@ img {
 	width: 150px;
 	border-radius: 999%;
 	border: 5px solid var(--head-img-bc);
+	transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
 
 .head-img:hover {
@@ -120,6 +105,19 @@ img {
     cursor: pointer;
 }
 
+.navbar-img-ani {
+	transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+}
+
+.navbar-img-ani:hover {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-7deg)
+}
+
 .navbar {
 	background-color: var(--navbar-bg);
 }
@@ -129,16 +127,20 @@ img {
 }
 
 .ver {
-	color: white;
+	color: #e9e9e9;
 	font-size: 18px;
 	text-decoration: none
 }
 
 .ver:hover {
+	background-image: var(--hyperlink-bi);
+	background-repeat: no-repeat;
+	background-size: 100% .1em;
+	background-position: 0 88%;
+	transition: background-size .25s ease-in;
 	text-decoration: none;
 	font-size: 18px;
 	color: white;
-	opacity: 0.8
 }
 
 .about-me {
@@ -182,17 +184,30 @@ img {
 }
 
 .soci-bt {
+	font-size: 31px;
 	float: left;
 	background-color: transparent;
 	color: white;
 	border-radius: 5px;
-	margin-right: 8px;
+	margin-right: 17px;
 	margin-bottom: 8px;
-    text-decoration: none
+    text-decoration: none;
+	-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
 
 .soci-bt:hover {
-    opacity: 0.8;
+	text-decoration: none;
+	color: white;
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);  
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .soci-txt {
@@ -295,7 +310,7 @@ img {
 }
 
 .card:hover {
-	box-shadow: #212231 0px 0px 20px;
+	border: 1px solid var(--head-img-bc);
 }
 
 #nameDesc {
@@ -303,10 +318,29 @@ img {
 	font-weight: 400
 }
 
+.social {
+	float: left;
+	padding-top: 4%;
+}
+
+.social-text {
+	font-size: 21px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.social-text-min {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left;
+	text-overflow: none;
+}
+
 :root {
-    --body-bg: #1f2131;
-    --navbar-bg: #181925;
-    --head-img-bc: #282a3f;
+    --body-bg: #111827;
+    --navbar-bg: #111827;
+    --head-img-bc: #1f2937;
     --florence-text-color: #b5b5e7;
     --hyperlink-bi: linear-gradient(120deg, #b5b5e7, #b5b5e7);
+	--card-bg: #1f2937
 }
