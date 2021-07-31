@@ -221,6 +221,25 @@ img {
 	font-weight: 300;
 	text-align: left;
 	text-overflow: none;
+	text-decoration: none;
+}
+
+.button {
+	float: left;
+	display: inline-block;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: .625rem .9375rem;
+	transition: all 0.3s
+}
+
+.button:hover {
+	opacity: 0.8;
+	color: #fff;
+	text-decoration: none;
 }
 
 :root {
