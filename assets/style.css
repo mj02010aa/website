@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,500,600,700,800");
+
 body {
 	font-family: "Titillium Web", sans-serif;
 	background-color: var(--body-bg);
@@ -18,14 +19,6 @@ img {
 		padding-left: 15%;
 		padding-right: 15%
 	}
-    .card {
-        display: inline-block;
-        background-color: var(--card-bg);
-        cursor: pointer;
-        margin-top: 1%;
-        margin-right: 24px;
-        border-radius: 5px;
-    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -36,16 +29,7 @@ img {
 	#head-br {
 		display: none
 	}
-    .card {
-        display: inline-block;
-        background-color: var(--card-bg);
-        cursor: pointer;
-        margin-top: 3%;
-        border-radius: 5px;
-    }
 	.social {
-		float: left;
-		padding-top: 4%;
 		padding-bottom: 2%
 	}
 }
@@ -105,13 +89,6 @@ img {
     cursor: pointer;
 }
 
-.navbar-img-ani {
-	transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
-}
-
 .navbar-img-ani:hover {
     -ms-transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
@@ -120,10 +97,6 @@ img {
 
 .navbar {
 	background-color: var(--navbar-bg);
-}
-
-.navbar-button {
-	font-size: 20px
 }
 
 .ver {
@@ -184,6 +157,7 @@ img {
 }
 
 .soci-bt {
+	margin-left: 2px;
 	font-size: 31px;
 	float: left;
 	background-color: transparent;
@@ -210,78 +184,6 @@ img {
     transform: scale(1.2);
 }
 
-.soci-txt {
-	margin-left: 30px;
-	margin-right: 30px;
-    text-decoration: none;
-    color: white
-}
-
-.discord-border {
-    border: 2px solid #5865F2;
-}
-
-.discord-logo {
-    color: #5865F2
-}
-
-.github-border {
-    border: 2px solid gray;
-}
-
-.github-logo {
-    color: gray;
-}
-
-.spotify-border {
-    border: 2px solid #1ed760;
-}
-
-.spotify-logo {
-    color: #1ed760;
-}
-
-.twitter-border {
-    border: 2px solid #009ded;
-}
-
-.twitter-logo {
-    color: #009ded;
-}
-
-.youtube-border {
-    border: 2px solid #f70000;
-}
-
-.youtube-logo {
-    color: #f70000;
-}
-
-.envelope-border {
-    border: 2px solid gray;
-}
-
-.envelope-logo {
-    color: gray;
-}
-
-.projects {
-	float: left;
-	padding-top: 4%;
-}
-
-.projects-text {
-	font-size: 21px;
-	font-weight: 500;
-	text-align: left;
-}
-
-.projects-text-min {
-	font-size: 18px;
-	font-weight: 300;
-	text-align: left
-}
-
 .active {
 	background-image: var(--hyperlink-bi);
 	background-repeat: no-repeat;
@@ -296,21 +198,6 @@ img {
 	text-decoration: none;
 	display: inline;
 	color: white
-}
-
-.card-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #dddddd
-}
-
-.card {
-    float: left
-}
-
-.card:hover {
-	border: 1px solid var(--head-img-bc);
 }
 
 #nameDesc {
@@ -342,5 +229,5 @@ img {
     --head-img-bc: #1f2937;
     --florence-text-color: #b5b5e7;
     --hyperlink-bi: linear-gradient(120deg, #b5b5e7, #b5b5e7);
-	--card-bg: #1f2937
+    --card-bg: #1f2937
 }
