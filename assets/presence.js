@@ -43,19 +43,19 @@ function update_presence() {
   }
 
   if (dscdata.d.discord_status === "dnd") {
-    listeningContent.innerHTML = `<span class="w-2 h-2 bg-red-500 rounded-full inline-flex animate-pulse ml-1 mr-2"></span> Online in <b>Discord</b>`;
+    listeningContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "idle") {
-    listeningContent.innerHTML = `<span class="w-2 h-2 bg-yellow-500 rounded-full inline-flex animate-pulse ml-1 mr-2"></span> Online in <b>Discord</b>`;
+    listeningContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "online") {
-    listeningContent.innerHTML = `<span class="w-2 h-2 bg-green-500 rounded-full inline-flex animate-pulse ml-1 mr-2"></span> Online in <b>Discord</b>`;
+    listeningContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "offline") {
-    listeningContent.innerHTML = `<span class="w-2 h-2 bg-gray-500 rounded-full inline-flex animate-pulse ml-1 mr-2"></span> Offline in <b>Discord</b>`;
+    listeningContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in <b>Discord</b>`;
 
   } else {
-    listeningContent.innerHTML = `<span class="w-2 h-2 bg-gray-500 rounded-full inline-flex animate-pulse ml-1 mr-2"></span> Loading <b>Lanyard</b>`;
+    listeningContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Loading <b>Lanyard</b>`;
 
   }
 }
