@@ -154,7 +154,7 @@ img {
 .head-text-exp {
 	padding-top: 4%;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: normal
 }
 
 .soci-bt {
@@ -241,6 +241,10 @@ img {
 	opacity: 0.8;
 	color: #fff;
 	text-decoration: none;
+}
+
+#poweredLanyard {
+	cursor: default
 }
 
 :root {
