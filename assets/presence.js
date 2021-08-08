@@ -59,17 +59,3 @@ function update_presence() {
 
   }
 }
-
-function update_status(status) {
-  var check_animation = statusIcon.classList[statusIcon.classList.length - 2];
-  if (check_animation.includes("animate")) {
-    statusIcon.classList.remove(
-      statusIcon.classList[statusIcon.classList.length - 2]
-    );
-  }
-  statusIcon.classList.replace(
-    statusIcon.classList[statusIcon.classList.length - 1],
-    `bg-${color}`
-  );
-  statusIcon._tippy.setContent(text);
-}
