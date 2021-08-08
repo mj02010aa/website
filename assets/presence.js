@@ -1,6 +1,5 @@
 var statusIcon = document.getElementById("statusIcon");
-var listeningStatus = document.getElementById("listeningStatus");
-var listeningContent = document.getElementById("listeningContent");
+var statusContent = document.getElementById("statusContent");
 
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
@@ -43,19 +42,19 @@ function update_presence() {
   }
 
   if (dscdata.d.discord_status === "dnd") {
-    listeningContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "idle") {
-    listeningContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "online") {
-    listeningContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
 
   } else if (dscdata.d.discord_status === "offline") {
-    listeningContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in <b>Discord</b>`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in <b>Discord</b>`;
 
   } else {
-    listeningContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Loading <b>Lanyard</b>`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Loading <b>Lanyard</b>`;
 
   }
 }
