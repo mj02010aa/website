@@ -141,7 +141,7 @@ img {
 	background-position: 0 88%;
 	transition: background-size .25s ease-in;
 	text-decoration: none;
-	color: white
+	color: white;
 }
 
 .hyperlink:hover {
