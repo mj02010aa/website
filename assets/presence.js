@@ -41,20 +41,39 @@ function update_presence() {
     update_status(dscdata.d.discord_status);
   }
 
-  if (dscdata.d.discord_status === "dnd") {
-    statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+  if (dscdata.d.listening_to_spotify == true) {
+    var artist = `${
+      dscdata.d.spotify.artist.split(";")[0].split(",")[0]
+    }`;
+    var song = `${
+      dscdata.d.spotify.song.split("(")[0]
+    }`;
+    statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Listening to <b>Spotify</b>`;
 
-  } else if (dscdata.d.discord_status === "idle") {
-    statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
-
-  } else if (dscdata.d.discord_status === "online") {
-    statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
-
-  } else if (dscdata.d.discord_status === "offline") {
-    statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in <b>Discord</b>`;
+    tippy('#listeningSpotify', {
+      content: `${song} by ${artist}`,
+      arrow: false,
+      animation: 'scale',
+      theme: 'ws',
+      placement: 'bottom',
+    });
 
   } else {
-    statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Loading <b>Lanyard</b>`;
-
+    if (dscdata.d.discord_status === "dnd") {
+      statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+  
+    } else if (dscdata.d.discord_status === "idle") {
+      statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+  
+    } else if (dscdata.d.discord_status === "online") {
+      statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in <b>Discord</b>`;
+  
+    } else if (dscdata.d.discord_status === "offline") {
+      statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in <b>Discord</b>`;
+  
+    } else {
+      statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Loading <b>Lanyard</b>`;
+  
+    }
   }
 }
