@@ -60,11 +60,3 @@
     animation: 'scale',
     theme: 'ws',
   });
-
-  tippy('#poweredLanyard', {
-    content: 'Powered by Lanyard',
-    arrow: false,
-    animation: 'scale',
-    theme: 'ws',
-    placement: 'bottom',
-  });
