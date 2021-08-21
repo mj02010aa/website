@@ -91,20 +91,20 @@ img {
 }
 
 .ver {
-	color: #e9e9e9;
 	font-size: 18px;
-	text-decoration: none
-}
-
-.ver:hover {
 	background-image: var(--hyperlink-bi);
 	background-repeat: no-repeat;
-	background-size: 100% .1em;
+	background-size: 0% .1em;
 	background-position: 0 88%;
 	transition: background-size .25s ease-in;
 	text-decoration: none;
-	font-size: 18px;
-	color: white;
+}
+
+.ver:hover {
+	text-decoration: none;
+	background-size: 100% .1em;
+	display: inline;
+	color: white
 }
 
 .about-me {
@@ -120,24 +120,22 @@ img {
 
 .about-me-text-min {
 	font-size: 18px;
-	font-weight: 300;
 	text-align: left
 }
 
 .hyperlink {
 	background-image: var(--hyperlink-bi);
 	background-repeat: no-repeat;
-	background-size: 100% .1em;
+	background-size: 0% .1em;
 	background-position: 0 88%;
 	transition: background-size .25s ease-in;
 	text-decoration: none;
-	color: white;
 }
 
 .hyperlink:hover {
 	text-decoration: none;
+	background-size: 100% .1em;
 	display: inline;
-	background-size: 100% 88%;
 	color: white
 }
 
@@ -152,7 +150,6 @@ img {
 	font-size: 31px;
 	float: left;
 	background-color: transparent;
-	color: white;
 	border-radius: 5px;
 	margin-right: 17px;
 	margin-bottom: 8px;
@@ -168,11 +165,11 @@ img {
 
 .soci-bt:hover {
 	text-decoration: none;
-	color: white;
 	-webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);  
     -moz-transform: scale(1.2);
     transform: scale(1.2);
+	color: unset
 }
 
 .active {
