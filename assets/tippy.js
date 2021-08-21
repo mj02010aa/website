@@ -1,54 +1,47 @@
-  tippy('#goHomeImage', {
-    content: 'Go Home',
-    arrow: false,
-    animation: 'scale',
-    theme: 'ws',
-  });
-
   tippy('#sociDiscord', {
-    content: 'View my Discord Profile',
+    content: 'Eleven#2716',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociGithub', {
-    content: 'View my GitHub Profile',
+    content: 'elevenvac',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociSpotify', {
-    content: 'View my Spotify Profile',
+    content: 'Eleven',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociTwitter', {
-    content: 'View my Twitter Profile',
+    content: '@elevenvac',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociYoutube', {
-    content: 'View my YouTube Profile',
+    content: 'Eleven',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociMail', {
-    content: 'Mail Me',
+    content: '11@apptime.tech',
     arrow: false,
     animation: 'scale',
     theme: 'ws',
   });
 
   tippy('#sociTrello', {
-    content: 'View my Trello Board',
+    content: "Eleven's Plans",
     arrow: false,
     animation: 'scale',
     theme: 'ws',
