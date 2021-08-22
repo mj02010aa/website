@@ -3,7 +3,7 @@ var statusContent = document.getElementById("statusContent");
 
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
-var dscdata = {};
+var api = {};
 var received = false;
 
 lanyard.onopen = function () {
@@ -29,24 +29,24 @@ setInterval(() => {
 
 lanyard.onmessage = function (event) {
   received = true;
-  dscdata = JSON.parse(event.data);
+  api = JSON.parse(event.data);
 
-  if (dscdata.t === "INIT_STATE" || dscdata.t === "PRESENCE_UPDATE") {
+  if (api.t === "INIT_STATE" || api.t === "PRESENCE_UPDATE") {
     update_presence();
   }
 };
 
 function update_presence() {
   if (statusIcon != null) {
-    update_status(dscdata.d.discord_status);
+    update_status(api.d.discord_status);
   }
 
-  if (dscdata.d.listening_to_spotify == true) {
+  if (api.d.listening_to_spotify == true) {
     var artist = `${
-      dscdata.d.spotify.artist.split(";")[0].split(",")[0]
+      api.d.spotify.artist.split(";")[0].split(",")[0]
     }`;
     var song = `${
-      dscdata.d.spotify.song.split("(")[0]
+      api.d.spotify.song.split("(")[0]
     }`;
     statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Listening to Spotify`;
 
@@ -59,16 +59,16 @@ function update_presence() {
     });
 
   } else {
-    if (dscdata.d.discord_status === "dnd") {
+    if (api.d.discord_status === "dnd") {
       statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-1"></span> Online in Discord`;
   
-    } else if (dscdata.d.discord_status === "idle") {
+    } else if (api.d.discord_status === "idle") {
       statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-1"></span> Online in Discord`;
   
-    } else if (dscdata.d.discord_status === "online") {
+    } else if (api.d.discord_status === "online") {
       statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-1"></span> Online in Discord`;
   
-    } else if (dscdata.d.discord_status === "offline") {
+    } else if (api.d.discord_status === "offline") {
       statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-1"></span> Offline in Discord`;
   
     } else {
