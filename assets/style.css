@@ -234,6 +234,10 @@ img {
 	cursor: default
 }
 
+::selection {
+	background-color: var(--florence-text-color);
+}
+
 :root {
     --body-bg: #111827;
     --navbar-bg: #111827;
