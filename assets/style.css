@@ -16,8 +16,8 @@ img {
 
 @media only screen and (min-width: 640px) {
 	.padding {
-		padding-left: 15%;
-		padding-right: 15%
+		padding-left: 17%;
+		padding-right: 17%
 	}
 }
 
@@ -75,6 +75,16 @@ img {
 	display: inline
 }
 
+.florence-text-btn {
+	color: var(--florence-text-color);
+	display: inline
+}
+
+.florence-text-btn:hover {
+	color: var(--florence-text-color);
+	text-decoration: underline;
+}
+
 .navbar-img {
 	width: 45px;
     cursor: pointer;
@@ -92,19 +102,12 @@ img {
 
 .ver {
 	font-size: 18px;
-	background-image: var(--hyperlink-bi);
-	background-repeat: no-repeat;
-	background-size: 0% .1em;
-	background-position: 0 88%;
-	transition: background-size .25s ease-in;
 	text-decoration: none;
 }
 
 .ver:hover {
 	text-decoration: none;
-	background-size: 100% .1em;
 	display: inline;
-	color: white
 }
 
 .about-me {
