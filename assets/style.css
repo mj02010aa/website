@@ -236,6 +236,29 @@ img {
 	background-color: var(--florence-text-color);
 }
 
+.tippyA:hover {
+	color: unset;
+	text-decoration: none;
+}
+
+.spotify-song-img {
+	width: 150px;
+	border-radius: 1%;
+	border: 2px solid #1DB954
+}
+
+.spotify-song-img-nob {
+	width: 150px;
+	border-radius: 1%;
+}
+
+.spotify-text-exp {
+	text-align: left;
+	padding-top: 4%;
+	font-size: 18px;
+	font-weight: normal
+}
+
 :root {
     --body-bg: #111827;
     --navbar-bg: #111827;
