@@ -247,9 +247,10 @@ img {
 	border: 2px solid #1DB954
 }
 
-.spotify-song-img-nob {
+.spotify-song-img-gb {
 	width: 150px;
 	border-radius: 1%;
+	border: 2px solid gray
 }
 
 .spotify-text-exp {
