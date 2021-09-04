@@ -3,6 +3,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociGithub', {
@@ -10,6 +11,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociSpotify', {
@@ -17,6 +19,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociTwitter', {
@@ -24,6 +27,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociYoutube', {
@@ -31,6 +35,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociMail', {
@@ -38,6 +43,7 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
 
   tippy('#sociTrello', {
@@ -45,4 +51,5 @@
     arrow: false,
     animation: 'scale',
     theme: 'ws',
+    placement: 'bottom',
   });
