@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,500,600,700,800");
+
+body {
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/568/845/216/dark-blue-blur-gradation-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1DB954;
+  padding: 0;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+img {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.inner a {
+  color: white;
+}
+
+.head-img-section {
+	float: left;
+	display: inline-block;
+	margin: 10px
+}
+
+.spotify-song-img {
+	width: 150px;
+	border-radius: 2%;
+}
+
+.spotify-song-img-gb {
+	width: 150px;
+	border-radius: 2%;
+}
+
+.spotify-text-exp {
+	text-align: left;
+	padding-top: 4%;
+	font-size: 18px;
+	font-weight: normal
+}
+
+.head-text-section {
+	float: left;
+	display: inline-block;
+	margin: 10px
+}
+
+.songRedi:hover {
+  text-decoration: underline;
+}
+
+.rh:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 640px) {
+	#head-br {
+		display: none
+	}
+}

@@ -42,10 +42,19 @@ function update_presence() {
   }
 
   if (api.d.listening_to_spotify == true) {
-    spotifyDetails.innerHTML = `<div class="head-img-section"><img draggable="false" class="spotify-song-img" src="${api.d.spotify.album_art_url}?size=2048"></div><div class="head-text-section"><div class="spotify-text-exp text-gray-100"><br id="head-br"><b>${api.d.spotify.song}</b><br>by ${api.d.spotify.artist}<br>on ${api.d.spotify.album}</div></div>`;
+    var artist = `${
+      api.d.spotify.artist.split(";")[0].split(",")[0]
+    }`;
+    var song = `${
+      api.d.spotify.song.split("(")[0]
+    }`;
+    var album = `${
+      api.d.spotify.album.split("(")[0]
+    }`;
+    spotifyDetails.innerHTML = `<div class="head-img-section"><a class="songRedi" href="https://open.spotify.com/track/${api.d.spotify.track_id}" target="_blank"><img draggable="false" class="spotify-song-img" src="${api.d.spotify.album_art_url}?size=2048"></a></div><div class="head-text-section"><div class="spotify-text-exp text-gray-100"><b><a class="songRedi" href="https://open.spotify.com/track/${api.d.spotify.track_id}" target="_blank">${song}</a></b><br>by ${artist}<br>on ${album}<br><a class="rh" href="/"><span class="text-gray-400">Return Home</span></a></div></div>`;
 
   } else {
-    spotifyDetails.innerHTML = `<div class="head-img-section"><img draggable="false" class="spotify-song-img-gb" src="https://i.scdn.co/image/ab67616d0000b273237665d08de01907e82a7d8a?size=2048?size=2048"></div><div class="head-text-section"><div class="spotify-text-exp text-gray-100"><br id="head-br"><b>Never Gonna Give You Up</b><br>by Rick Astley<br>on Whenever You Need Somebody</div></div>`;
+    spotifyDetails.innerHTML = `Not Listening<br><a class="rh" href="/"><span class="text-gray-400">Return Home</span></a>`;
   }
 
 }
