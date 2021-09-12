@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,500,600,700,800");
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
 
 body {
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Inter";
 	background-color: var(--body-bg);
 	color: white;
-	text-align: center;
     text-decoration: none
 }
 
@@ -14,10 +13,36 @@ img {
     user-select: none
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 @media only screen and (min-width: 640px) {
 	.padding {
-		padding-left: 17%;
-		padding-right: 17%
+		padding-left: 23%;
+		padding-right: 23%
+	}
+	.head {
+		padding-top: 3%
+	}
+	.projects {
+		padding-top: 4%
+	}
+	.footer {
+		padding-top: 3%
+	}
+	.footer {
+		padding-bottom: 3%
+	}
+	.footer-in {
+		padding-bottom: 3%
+	}
+	.foot-left-t {
+		float: left;
+	}
+	
+	.foot-right-t {
+		float: right;
 	}
 }
 
@@ -26,238 +51,97 @@ img {
 		padding-left: 3%;
 		padding-right: 3%
 	}
-	#head-br {
-		display: none
+	.head {
+		padding-top: 7%
 	}
-	.social {
-		padding-bottom: 2%
+	.projects {
+		padding-top: 8%
 	}
-}
-
-.head {
-	padding-top: 5%;
-	margin-left: -10px
-}
-
-.head-img-section {
-	float: left;
-	display: inline-block;
-	margin: 10px
+	.footer {
+		padding-top: 7%
+	}
+	.footer {
+		padding-bottom: 7%
+	}
+	.footer-in {
+		padding-bottom: 7%
+	}
+	.foot-left-t {
+		margin-bottom: 2px
+	}
+	
+	.foot-right-t {
+		margin-top: 2px
+	}
 }
 
 .head-img {
-	width: 150px;
 	border-radius: 999%;
-	border: 5px solid var(--head-img-bc);
-}
-
-.head-text {
-	font-size: 25px;
-	font-weight: 700;
-	text-align: left;
-	line-height: 1.1;
-}
-
-.head-text-min {
-	font-size: 15px;
-	font-weight: 300;
-	text-align: left
-}
-
-.head-text-section {
-	float: left;
-	display: inline-block;
-	margin: 10px
+	border: solid 3px var(--florence-text-color)
 }
 
 .florence-text {
 	color: var(--florence-text-color);
-	display: inline
-}
-
-.florence-text-btn {
-	color: var(--florence-text-color);
-	display: inline
+	font-weight: 500;
+	font-size: 17px;
 }
 
 .florence-text-btn:hover {
 	color: var(--florence-text-color);
-	text-decoration: underline;
 }
 
-.navbar-img {
-	width: 45px;
-    cursor: pointer;
+.ht-margint {
+	margin-top: 40px
 }
 
-.navbar-img-ani:hover {
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-7deg)
+.name-text {
+	font-size: 50px;
+	font-weight: 700;
 }
 
-.navbar {
-	background-color: var(--navbar-bg);
+.head-desc {
+	font-size: 18px
 }
 
-.ver {
-	font-size: 18px;
-	text-decoration: none;
+.foot-icon {
+	font-size: 20px
 }
 
-.ver:hover {
-	text-decoration: none;
-	display: inline;
+.foot-icon:hover {
+	color: #5c646f
 }
 
-.about-me {
-	float: left;
-	padding-top: 1.4%;
+.pr-text {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 45px;
 }
 
-.about-me-text {
-	font-size: 21px;
+.about-text {
+	font-size: 18px
+}
+
+.florence-text-nc {
 	font-weight: 500;
-	text-align: left;
+	font-size: 17px;
 }
 
-.about-me-text-min {
-	font-size: 18px;
-	text-align: left
+.card {
+	border-radius: 1.5rem;
+	background-color: #1e293b;
 }
 
-.hyperlink {
-	background-image: var(--hyperlink-bi);
-	background-repeat: no-repeat;
-	background-size: 0% .1em;
-	background-position: 0 88%;
-	transition: background-size .25s ease-in;
-	text-decoration: none;
+.card-in {
+	margin: 30px 30px
 }
 
-.hyperlink:hover {
-	text-decoration: none;
-	background-size: 100% .1em;
-	display: inline;
-	color: white
+.card-title {
+	font-size: 27px;
+	font-weight: 600;
 }
 
-.head-text-exp {
-	padding-top: 4%;
-	font-size: 16px;
-	font-weight: normal
-}
-
-.soci-bt {
-	margin-left: 1px;
-	font-size: 31px;
-	float: left;
-	background-color: transparent;
-	border-radius: 5px;
-	margin-right: 17px;
-	margin-bottom: 8px;
-    text-decoration: none;
-	-webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
-}
-
-.soci-bt:hover {
-	text-decoration: none;
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);  
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-	color: unset
-}
-
-.active {
-	background-image: var(--hyperlink-bi);
-	background-repeat: no-repeat;
-	background-size: 100% .1em;
-	background-position: 0 88%;
-	transition: background-size .25s ease-in;
-	text-decoration: none;
-	color: white
-}
-
-.active:hover {
-	text-decoration: none;
-	display: inline;
-	color: white
-}
-
-.social {
-	float: left;
-	padding-top: 1.4%;
-}
-
-.social-text {
-	font-size: 21px;
-	font-weight: 500;
-	text-align: left;
-}
-
-.social-text-min {
-	font-size: 18px;
-	font-weight: 300;
-	text-align: left;
-	text-overflow: none;
-	text-decoration: none;
-}
-
-.button {
-	float: left;
-	display: inline-block;
-	font-size: 15px;
-	color: #fff;
-	text-decoration: none;
-	background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 5px;
-	padding: .625rem .9375rem;
-	transition: all 0.3s
-}
-
-.button:hover {
-	opacity: 0.8;
-	color: #fff;
-	text-decoration: none;
-}
-
-#listeningSpotify {
-	cursor: default
-}
-
-::selection {
-	background-color: var(--florence-text-color);
-}
-
-.tippyA:hover {
-	color: unset;
-	text-decoration: none;
-}
-
-.spotify-song-img {
-	width: 150px;
-	border-radius: 1%;
-	border: 2px solid #1DB954
-}
-
-.spotify-song-img-gb {
-	width: 150px;
-	border-radius: 1%;
-	border: 2px solid gray
-}
-
-.spotify-text-exp {
-	text-align: left;
-	padding-top: 4%;
-	font-size: 18px;
-	font-weight: normal
+.card-desc {
+	font-size: 17px
 }
 
 :root {
@@ -265,6 +149,4 @@ img {
     --navbar-bg: #111827;
     --head-img-bc: #1f2937;
     --florence-text-color: #b5b5e7;
-    --hyperlink-bi: linear-gradient(120deg, #b5b5e7, #b5b5e7);
-    --card-bg: #1f2937
 }
