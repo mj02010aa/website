@@ -130,6 +130,12 @@ a:hover {
 	line-height: 45px;
 }
 
+.pnf-text {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
 .about-text {
 	font-size: 18px
 }
