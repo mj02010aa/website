@@ -53,7 +53,6 @@ a:hover {
 	.foot-left-t {
 		float: left;
 	}
-	
 	.foot-right-t {
 		float: right;
 	}
@@ -160,7 +159,19 @@ a:hover {
 }
 
 .card-desc {
-	font-size: 17px
+	font-size: 18px
+}
+
+.techs-name {
+	font-size: 16px
+}
+
+.career-title {
+	font-size: 18px
+}
+
+.career-desc {
+	font-size: 16px
 }
 
 :root {
