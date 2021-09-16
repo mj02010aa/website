@@ -1,5 +1,6 @@
 var statusIcon = document.getElementById("statusIcon");
 var statusContent = document.getElementById("statusContent");
+var spotifyListening = document.getElementById("spotifyListening");
 
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
@@ -39,6 +40,21 @@ lanyard.onmessage = function (event) {
 function update_presence() {
   if (statusIcon != null) {
     update_status(api.d.discord_status);
+  }
+
+  if (api.d.listening_to_spotify == true) {
+    var artist = `${
+      api.d.spotify.artist.split(";")[0].split(",")[0]
+    }`;
+    var song = `${
+      api.d.spotify.song.split("(")[0]
+    }`;
+    var album = `${
+      api.d.spotify.album.split("(")[0]
+    }`;
+    spotifyListening.innerHTML = `<i class="fab fa-spotify text-green-500 animate-spin ml-1"></i> Listening <a href="https://open.spotify.com/track/${api.d.spotify.track_id}" target="_blank" class="florence-text-btn">${song}</a> by ${artist} on ${album}`;
+  } else {
+    spotifyListening.innerHTML = ``;
   }
 
   if (api.d.discord_status === "dnd") {
