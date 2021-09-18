@@ -186,23 +186,6 @@ a:hover {
 	cursor: pointer
 }
 
-.business-btn {
-	border: 2px solid white;
-	border-radius: 99px;
-    padding: 8% 23%;
-	font-size: 15px;
-	font-weight: 500;
-}
-
-.business-btn:hover {
-	background-color: white;
-	border: 2px solid white;
-	border-radius: 99px;
-    padding: 8% 23%;
-	font-size: 15px;
-	font-weight: 500;
-}
-
 :root {
     --body-bg: #111827;
     --navbar-bg: #111827;
