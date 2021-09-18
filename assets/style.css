@@ -56,6 +56,14 @@ a:hover {
 	.foot-right-t {
 		float: right;
 	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	  }
+	.grid-container > div {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 640px) {
