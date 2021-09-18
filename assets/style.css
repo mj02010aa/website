@@ -190,6 +190,18 @@ a:hover {
 	float: right;
 }
 
+.html5-icon {
+	color: #dd4b25
+}
+
+.css3-icon {
+	color: #2b9ad3
+}
+
+.js-icon {
+	color: #efd81d
+}
+
 :root {
     --body-bg: #111827;
     --navbar-bg: #111827;
